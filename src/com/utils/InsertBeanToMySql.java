@@ -55,7 +55,8 @@ public class InsertBeanToMySql {
 	public static void doStSync() {
 		final Dao dao = MyNutzDao.GetDaoDao();
 		System.out.println("dd");
-		final Dao sqlDao= MyNutzDao.GetMysqlDao();
+		final Dao sqlDao= MyNutzDao.getSQlDao();
+//		final Dao sqlDao= MyNutzDao.GetMysqlDao();
 		logger.info("【省厅案件同步开始0】");
 //		List<YYYY> li = dao.query(YYYY.class, null); 
 		//\\44.53.4.111\share\TempFile\20171228\c10f2718-d713-4ece-bc7b-0640b5906cdf.jpg
